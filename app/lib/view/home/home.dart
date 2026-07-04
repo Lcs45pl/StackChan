@@ -122,6 +122,18 @@ class _HomeState extends State<Home> {
               height: size,
             ),
             label: "Settings",
+            ),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset(
+              'assets/spotify.svg',
+              colorFilter: ColorFilter.mode(
+                pageIndex == 4 ? activeColor : inactiveColor,
+                BlendMode.srcIn,
+              ),
+              width: size,
+              height: size,
+            ),
+            label: 'Spotify',
           ),
         ],
       ),
@@ -137,6 +149,8 @@ class _HomeState extends State<Home> {
               //   return Moments();
               case 1:
                 return Settings();
+              case 4:
+                return Spotify();
               default:
                 return SizedBox();
             }
