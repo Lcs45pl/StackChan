@@ -150,7 +150,7 @@ class _HomeState extends State<Home> {
               case 1:
                 return Settings();
               case 4:
-                return Spotify();
+                return SpotifyPage();
               default:
                 return SizedBox();
             }
