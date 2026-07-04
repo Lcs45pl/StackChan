@@ -4,7 +4,7 @@ SPDX-License-Identifier: MIT
 */
 
 import 'dart:async';
-
+import 'package:stack_chan/view/home/spotify_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:stack_chan/util/blue_util.dart';
